@@ -1,1 +1,8 @@
 # ProfileSR_GAN
+
+A GAN-based method to get high-resolution load profiles from low-resolutions ones.
+
+Abstract:
+This paper presents a novel two-stage load profile super-resolution (LPSR) framework, ProfileSR-GAN, to upsample the low-resolution load profiles (LRLPs) to high-resolution load profiles (HRLPs). The LPSR problem is formulated as a Maximum-a-Posteriori problem. In the first-stage, a GAN-based model is adopted to restore high-frequency components from the LRLPs. To reflect the load-weather dependency, aside from the LRLPs, the weather data is added as an input to the GAN-based model. In the second-stage, a polishing network guided by outline loss and switching loss is novelly introduced to remove the unrealistic power fluctuations in the generated HRLPs and improve the point-to-point matching accuracy. To evaluate the realisticness of the generated HRLPs, a new set of load shape evaluation metrics is developed. Simulation results show that: i) ProfileSR-GAN outperforms the state-of-the-art methods in all shape-based metrics and can achieve comparable performance with those methods in point-to-point matching accuracy, and ii) after applying ProfileSR-GAN to convert LRLPs to HRLPs, the performance of a downstream task, non-intrusive load monitoring, can be significantly improved. This demonstrates that ProfileSR-GAN is an effective new mechanism for restoring high-frequency components in downsampled time-series data sets and improves the performance of downstream tasks that require HR load profiles as inputs.
+
+Song, Lidong, Yiyan Li, and Ning Lu. "ProfileSR-GAN: A gan based super-resolution method for generating high-resolution load profiles." IEEE Transactions on Smart Grid 13.4 (2022): 3278-3289.
